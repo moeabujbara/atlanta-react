@@ -66,7 +66,7 @@ class App extends Component {
           </div>
 
           <div class="footer-copyright text-center py-3">
-            © 2020 Copyright:
+            @09/01/2020 Copyright:
             <a href="WWW.GMAIL.COM"> ATLANTA@GMAIL.COM</a>
           </div>
         </footer>
