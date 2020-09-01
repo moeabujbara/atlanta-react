@@ -1,0 +1,66 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+nav{
+
+  margin-top:15px;
+}
+
+ul {
+    list-style-type: none;
+   
+  }
+  
+  li {
+    float: left;
+    margin-right:15px;
+   
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .form-inline{
+ padding-left:2px;
+ padding-left:510px;
+ margin-top:0.5cm;
+  }
+ .btn btn-outline-success my-2 my-sm-0{
+   padding-left:10px;
+ }
+  #firstpage{
+    background-color:black;
+    
+  }
+  #explian {
+    background-color: tomato;
+    color: black;
+    border: 3px solid black;
+    margin: 20px;
+    padding: 20px;
+    
+  }
+  #ifram1{
+  margin-top:0.5cm;
+
+  }
+
+  
+  img {
+    border: 5px solid red;
+  }
+  
+  .par{
+
+  
+ 
+  color: white;
+  
+  }
+  a:link{
+    color:rgba(255, 145, 0, 0.822);
+  }
