@@ -25,12 +25,12 @@ class App extends Component {
               <li className="nav-item">
                 <Link to={"/AstronomyPicture.js"} className="nav-link active">
                   {" "}
-                  AstronomyPicture{" "}
+                  Astronomy Picture{" "}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to={"/FavouriteMovie.js"} className="nav-link active">
-                  FavouriteMovie
+                  Favourite Movie
                 </Link>
               </li>
             </ul>
