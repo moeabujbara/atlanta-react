@@ -32,6 +32,8 @@ class FavouriteMovie extends Component {
             className="form-control mr-sm-2"
             aria-label="Search"
             type="search"
+            name="username"
+            required
             onChange={this.updateInputValue}
           ></input>
           <button
