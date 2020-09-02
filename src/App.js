@@ -47,13 +47,13 @@ class App extends Component {
           <Route path="/FavouriteMovie.js" component={FavouriteMovie} />
         </Switch>
 
-        <footer class="page-footer font-small mdb-color darken-3 pt-4">
-          <div class="container">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9 mb-4">
+        <footer className="page-footer font-small mdb-color darken-3 pt-4">
+          <div className="container">
+            <div className="row d-flex justify-content-center">
+              <div className="col-md-6">
+                <div className="embed-responsive embed-responsive-16by9 mb-4">
                   <iframe
-                    class="embed-responsive-item"
+                    className="embed-responsive-item"
                     src="https://www.youtube.com/embed/vlDzYIIOYmM"
                     width="400"
                     height="400"
@@ -65,7 +65,7 @@ class App extends Component {
             </div>
           </div>
 
-          <div class="footer-copyright text-center py-3">
+          <div className="footer-copyright text-center py-3">
             @09/01/2020 Copyright:
             <a href="WWW.GMAIL.COM"> ATLANTA@GMAIL.COM</a>
           </div>
