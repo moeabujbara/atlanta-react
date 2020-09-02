@@ -15,24 +15,35 @@ class AstronomyPicture extends Component {
   }
   render() {
     return (
-      <div id="firstpage">
-        {this.state.pictureData == null ? (
-          "loading"
-        ) : (
-          <div className="Main1">
-            <center>
-              <img
+      <div className="Main1"> 
+      {this.state.pictureData.media_type=="image"? (
+      <div>
+        <center>
+          <img
+            id="ifram1"
+            src={this.state.pictureData.url}
+            style={{ height: "500px", width: "800px" }}
+          ></img>
+          </center>
+          <p id="explian">{this.state.pictureData.explanation}</p>
+          </div>
+            ) : (
+              <div>
+              <center>
+              <iframe
                 id="ifram1"
                 src={this.state.pictureData.url}
                 style={{ height: "500px", width: "800px" }}
-              ></img>
+              ></iframe>
             </center>
-
             <p id="explian">{this.state.pictureData.explanation}</p>
           </div>
-        )}
-      </div>
+
+            
+          )  }
+          </div>
     );
+    
   }
 }
 
