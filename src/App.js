@@ -8,7 +8,7 @@ import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
 import Badge from "react-bootstrap/Badge";
-import x from './images/x.jpg';
+import x from "./images/x.jpg"; /*to read locally image<img src={x} alt="myimagename>"*/
 
 class App extends Component {
   /* extends mean inheritance */
@@ -51,16 +51,9 @@ class App extends Component {
         <footer className="page-footer font-small mdb-color darken-3 pt-4">
           <div className="container">
             <div className="row d-flex justify-content-center">
-              <div className="col-md-6">
-                <div className="embed-responsive embed-responsive-16by9 mb-4">
-                  <img
-                    src={x} alt="Fmailyimage"
-                    width="500"
-                    height="500"
-                  >
-                  </img>
-                </div>
-              </div>
+             
+                  <img src={x} alt="Fmailyimage" id="col-md-6" width="1000" height="500"></img> 
+              
             </div>
           </div>
 
