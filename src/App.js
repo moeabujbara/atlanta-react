@@ -8,6 +8,7 @@ import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
 import Badge from "react-bootstrap/Badge";
+import x from './images/x.jpg';
 
 class App extends Component {
   /* extends mean inheritance */
@@ -52,14 +53,12 @@ class App extends Component {
             <div className="row d-flex justify-content-center">
               <div className="col-md-6">
                 <div className="embed-responsive embed-responsive-16by9 mb-4">
-                  <iframe
-                    className="embed-responsive-item"
-                    src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                    width="400"
-                    height="400"
+                  <img
+                    src={x} alt="Fmailyimage"
+                    width="500"
+                    height="500"
                   >
-                    allowfullscreen
-                  </iframe>
+                  </img>
                 </div>
               </div>
             </div>
