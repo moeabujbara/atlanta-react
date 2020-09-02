@@ -24,13 +24,13 @@ class App extends Component {
                 </h1>
               </li>
               <li className="nav-item">
-                <Link to={"/AstronomyPicture.js"} className="nav-link active">
+                <Link to={"/astronomy-picture"} className="nav-link active">
                   {" "}
                   Astronomy Picture{" "}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={"/FavouriteMovie.js"} className="nav-link active">
+                <Link to={"/favourite-movie"} className="nav-link active">
                   Favourite Movie
                 </Link>
               </li>
@@ -42,10 +42,10 @@ class App extends Component {
         <Switch>
           <Route
             exact
-            path="/AstronomyPicture.js"
+            path="/astronomy-picture"
             component={AstronomyPicture}
           />
-          <Route path="/FavouriteMovie.js" component={FavouriteMovie} />
+          <Route path="/favourite-movie" component={FavouriteMovie} />
         </Switch>
 
         <footer className="page-footer font-small mdb-color darken-3 pt-4">
