@@ -31,7 +31,7 @@ class AstronomyPicture extends Component {
               <div>
               <center>
               <iframe
-                id="ifram1"
+                id="ifram2"
                 src={this.state.pictureData.url}
                 style={{ height: "500px", width: "800px" }}
               ></iframe>
