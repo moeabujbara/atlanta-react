@@ -8,6 +8,9 @@ class FavouriteMovie extends Component {
     moive_name: null,
     movie_data: [],
   };
+  getInitialState = () => {
+    return { moive_name: { i: [] } };
+  };
 
   updateInputValue = (evt) => {
     this.setState({
@@ -22,7 +25,7 @@ class FavouriteMovie extends Component {
     /*console.warn(this.state.movie_data); important to see whats going on*/
   };
 
-  componentDidMount() {}
+  /*componentDidMount() {}*/
 
   render() {
     return (
@@ -46,14 +49,10 @@ class FavouriteMovie extends Component {
         </div>
 
         {this.state.movie_data.map((i) => (
-          <div className="Main1">
-            <div className="div1">
-              {" "}
-              <p className="par">{i.Title}</p>
-              <img src={i.Poster} id="imageMovie"></img>
-              <p>{i.type}</p>
-              <p>{i.year}</p>
-            </div>
+          <div className="div1">
+            <h4 className="par">{i.Title}</h4>
+            <h4 id="par">{i.Type} </h4>
+            <img src={i.Poster} id="imageMovie"></img>
           </div>
         ))}
       </center>
