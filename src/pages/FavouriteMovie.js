@@ -8,21 +8,28 @@ class FavouriteMovie extends Component {
     moive_name: null,
     movie_data: [],
   };
-  getInitialState = () => {
-    return { moive_name: { i: [] } };
-  };
+ 
 
   updateInputValue = (evt) => {
     this.setState({
       moive_name: evt.target.value,
+     
     });
   };
 
   getMovieData = async () => {
-    let response = await gettheNameoftheMovieApi(this.state.moive_name);
-    console.log("Here you go moviedata component =>>", response);
-    this.setState({ movie_data: response.data.Search });
-    /*console.warn(this.state.movie_data); important to see whats going on*/
+    if (this.state.moive_name!=null) {
+      console.warn(this.state.moive_name);
+      let response = await gettheNameoftheMovieApi(this.state.moive_name);
+      console.log("Here you go moviedata component =>>", response);
+      this.setState({ movie_data: response.data.Search });
+      /*console.warn(this.state.movie_data); important to see whats going on*/
+      
+    } else {
+    return  <h2>Please Enter your Movie Name</h2>
+      
+    }
+   
   };
 
   /*componentDidMount() {}*/
@@ -51,7 +58,6 @@ class FavouriteMovie extends Component {
         {this.state.movie_data.map((i) => (
           <div className="div1">
             <h4 className="par">{i.Title}</h4>
-            <h4 id="par">{i.Type} </h4>
             <img src={i.Poster} id="imageMovie"></img>
           </div>
         ))}
