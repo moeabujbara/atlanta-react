@@ -20,7 +20,7 @@ class App extends Component {
             <ul>
               <li>
                 <h1>
-                  <Badge variant="warning">ATLANTA</Badge>
+                  <Badge variant="primary">ATLANTA</Badge>
                 </h1>
               </li>
               <li className="nav-item">
