@@ -58,7 +58,7 @@ class FavouriteMovie extends Component {
         {this.state.movie_data.map((i,x,b) => (
           <div key={x}className="div1">
             <h4 key={b}className="par">{i.Title}</h4>
-            <img key={b}src={i.Poster} id="imageMovie"></img>
+            <img key={x}src={i.Poster} id="imageMovie"></img>
           </div>
         ))}
       </center>
