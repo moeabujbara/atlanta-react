@@ -57,7 +57,7 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="footer-copyright text-center py-3">
+          <div variant="primary" className="footer-copyright text-center py-3">
             @09/01/2020 Copyright:
             <a href="WWW.GMAIL.COM"> ATLANTA@GMAIL.COM</a>
           </div>
