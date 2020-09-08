@@ -20,7 +20,7 @@ class App extends Component {
             <ul>
               <li>
                 <h1>
-                  <Badge variant="warning">ATLANTA</Badge>
+                  <Badge variant="primary">ATLANTA</Badge>
                 </h1>
               </li>
               <li className="nav-item">
@@ -57,7 +57,7 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="footer-copyright text-center py-3">
+          <div variant="primary" className="footer-copyright text-center py-3">
             @09/01/2020 Copyright:
             <a href="WWW.GMAIL.COM"> ATLANTA@GMAIL.COM</a>
           </div>
